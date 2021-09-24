@@ -25,6 +25,7 @@ class Search
     const OPTION_SIZE = 'size';
     const OPTION_SCROLL = 'scroll';
     const OPTION_SCROLL_ID = 'scroll_id';
+    const OPTION_SOURCE_EXCLUDES = '_source_excludes';
     const OPTION_QUERY_CACHE = 'query_cache';
     const OPTION_TERMINATE_AFTER = 'terminate_after';
     const OPTION_SHARD_REQUEST_CACHE = 'request_cache';
@@ -289,6 +290,7 @@ class Search
             case self::OPTION_SCROLL_ID:
             case self::OPTION_SEARCH_TYPE_SUGGEST:
             case self::OPTION_SEARCH_IGNORE_UNAVAILABLE:
+            case self::OPTION_SOURCE_EXCLUDES:
             case self::OPTION_QUERY_CACHE:
             case self::OPTION_TERMINATE_AFTER:
             case self::OPTION_SHARD_REQUEST_CACHE:
